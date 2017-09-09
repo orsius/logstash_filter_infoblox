@@ -1,0 +1,342 @@
+PUT _template/infoblox 
+{
+  "order": 0,
+  "template": "infoblox-*",
+  "settings": {},
+  "mappings": {
+    "doc": {
+	  "dynamic": "false",
+	  "_all": {
+	    "enabled": false
+	  },
+	"properties": {
+	  "@timestamp": {
+		  "type": "date"
+	  },
+	  "@version": {
+		  "type": "integer"
+	  },
+      "dig_type": {
+        "type": "keyword"
+      },
+	  "host": {
+		  "type": "ip"
+	  },
+      "hostname": {
+        "type": "keyword"
+      },
+	  "logsource": {
+		  "type": "keyword"
+	  },
+	  "message": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+        "ignore_above": 256,
+        "type": "keyword"
+        }
+      }
+	  },
+	  "pid": {
+		  "type": "long"
+	  },
+	  "port": {
+		  "type": "long"
+	  },
+	  "program": {
+		  "type": "keyword"
+	  },
+	  "severity": {
+		  "type": "integer"
+	  },
+	  "tags": {
+		  "type": "keyword"
+	  },
+    "type": {
+      "type": "keyword"
+    },
+	  "dhcp_action": {
+		  "type": "keyword"
+	  },
+	  "dhcp_client_ip": {
+		  "type": "ip"
+	  },
+	  "dhcp_client_mac": {
+		  "type": "keyword"
+	  },
+	  "dhcp_client_name": {
+		  "type": "keyword"
+	  },
+	  "dhcp_client_reverse": {
+		  "type": "keyword"
+	  },
+	  "dhcp_decline_reason": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+        "ignore_above": 256,
+        "type": "keyword"
+        }
+      }
+	  },
+	  "dhcp_inform_error": {
+		  "type": "keyword"
+	  },
+	  "dhcp_lease_duration": {
+		  "type": "integer"
+	  },
+	  "dhcp_map": {
+		  "type": "keyword"
+	  },
+	  "dhcp_map_error": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+        "ignore_above": 256,
+        "type": "keyword"
+        }
+      }
+	  },
+	  "dhcp_message": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+        "ignore_above": 256,
+        "type": "keyword"
+        }
+      }
+	  },
+	  "dhcp_offered_duration": {
+		  "type": "integer"
+	  },
+	  "dhcp_relay_ip": {
+		  "type": "ip"
+	  },
+	  "dhcp_request": {
+		  "type": "keyword"
+	  },
+	  "dhcp_server_ip": {
+		  "type": "ip"
+	  },
+	  "dhcp_system": {
+		  "type": "keyword"
+	  },
+	  "dhcp_system_message": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+        "ignore_above": 256,
+        "type": "keyword"
+        }
+      }
+	  },
+	  "dhcp_uid_mac": {
+		  "type": "keyword"
+	  },
+	  "dhcp_via_ip": {
+		  "type": "ip"
+	  },
+	  "dns_client": {
+		  "type": "keyword"
+	  },
+	  "dns_client_id": {
+		  "type": "integer"
+	  },
+	  "dns_client_ip": {
+		  "type": "ip"
+	  },
+	  "dns_client_key": {
+		  "type": "integer"
+	  },
+	  "dns_client_message": {
+		  "type": "text",
+      "fields": {
+        "keyword": {
+        "ignore_above": 256,
+        "type": "keyword"
+        }
+      }
+	  },
+	  "dns_client_name": {
+		  "type": "keyword"
+	  },
+	  "dns_client_notify_zone": {
+		  "type": "keyword"
+	  },
+	  "dns_client_notify_reverse": {
+		  "type": "keyword"
+	  },
+	  "dns_client_record_type": {
+		  "type": "keyword"
+	  },
+	  "dns_client_reverse": {
+		  "type": "keyword"
+	  },
+	  "dns_client_signer": {
+		  "type": "keyword"
+	  },
+	  "dns_client_signer_result": {
+		  "type": "keyword"
+	  },
+	  "dns_client_system": {
+		  "type": "keyword"
+	  },
+	  "dns_client_zone": {
+		  "type": "keyword"
+	  },
+	  "dns_client_zone_reverse": {
+		  "type": "keyword"
+	  },
+	  "dns_zone": {
+		  "type": "keyword"
+	  },
+	  "dns_zone_action": {
+		  "type": "keyword"
+	  },
+	  "dns_zone_host_ip": {
+		  "type": "ip"
+	  },
+	  "dns_zone_host_name": {
+		  "type": "keyword"
+	  },
+	  "dns_zone_host_reverse": {
+		  "type": "keyword"
+	  },
+	  "dns_zone_host_reverse_ip": {
+		  "type": "ip"
+	  },
+	  "dns_zone_message": {
+		  "type": "text",
+		  "fields": {
+			"keyword": {
+        "ignore_above": 256,
+        "type": "keyword"
+        }
+		  }
+	  },
+	  "dns_zone_metrics": {
+		  "type": "text"
+	  },
+	  "dns_zone_nr": {
+		  "type": "integer"
+	  },
+	  "dns_zone_record": {
+		  "type": "keyword"
+	  },
+	  "dns_zone_reverse": {
+		  "type": "keyword"
+	  },
+	  "dns_zone_rest": {
+		  "type": "text",
+		  "fields": {
+        "keyword": {
+        "ignore_above": 256,
+        "type": "keyword"
+        }
+		  }
+	  },
+ 	  "dns_zone_serial": {
+		  "type": "integer"
+	  },
+ 	  "dns_zone_soa_serial": {
+		  "type": "integer"
+	  },
+	  "dns_zone_server": {
+		  "type": "keyword"
+	  },
+	  "dns_system": {
+		  "type": "keyword"
+	  },
+	  "dns_system_error": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+        "ignore_above": 256,
+        "type": "keyword"
+        }
+      }
+	  },
+	  "dns_zone_transaction_id": {
+		  "type": "integer"
+	  },
+	  "dns_zone_transaction_serial": {
+		  "type": "integer"
+	  },
+	  "dns_zone_user": {
+		  "type": "keyword"
+	  },
+	  "dns_zone_version": {
+		  "type": "integer"
+	  },
+	  "infoblox_action": {
+		  "type": "keyword"
+	  },
+	  "infoblox_auth_type": {
+		  "type": "keyword"
+	  },
+	  "infoblox_auth_system": {
+		  "type": "keyword"
+	  },
+	  "infoblox_httpd_time": {
+		  "type": "keyword"
+	  },
+	  "infoblox_system": {
+		  "type": "keyword"
+	  },
+	  "infoblox_trigger": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+        "ignore_above": 256,
+        "type": "keyword"
+        }
+      }
+	  },
+	  "infoblox_user_adgroup": {
+		  "type": "keyword"
+	  },	  
+	  "infoblox_user_ip": {
+		  "type": "ip"
+	  },
+	  "infoblox_user_name": {
+		  "type": "keyword"
+	  },
+	  "infoblox_via": {
+		  "type": "keyword"
+	  },
+	  "syslog_pid": {
+		  "type": "integer"
+	  },
+	  "syslog_pri": {
+		  "type": "integer"
+	  },
+	  "syslog_hostname": {
+		  "type": "keyword"
+	  },
+	  "syslog_message": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+        "ignore_above": 256,
+        "type": "keyword"
+        }
+      }
+	  },
+	  "syslog_program": {
+		  "type": "keyword"
+	  },
+	  "syslog_severity": {
+		  "type": "keyword"
+	  }
+	}
+  },
+  "_default_": {
+	  "_all": {
+	    "enabled": false
+	  }
+    }
+  },
+  "aliases": {
+    "infoblox": {}
+  }
+}
