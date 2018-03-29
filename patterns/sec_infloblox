@@ -1,0 +1,32 @@
+# contents of ./patterns/sec_infoxblox:
+##
+### "message", "%{SYSLOG5424PRI}%{SYSLOGTIMESTAMP:timestamp}\s+%{HOSTNAME}\s+%{IP:ipaddr}\s+%{WORD:syslog_program}(?:\[%{POSINT:syslog_pid}\])?:\s+%{GREEDYDATA:syslog_message}"
+
+INFOBLOXMAC %{MAC}
+INFOBLOXIP %{IP}
+
+DHCPREQUEST ^(DHCPDISCOVER|DHCPOFFER|DHCPREQUEST|DHCPACK|DHCPNAK|DHCPDECLINE|DHCPRELEASE|DHCPINFORM|RELEASE|DHCPEXPIRE)
+DHCPMAP ^DHCPMAP
+# DHCPREQUEST for 10.101.5.227 from 00:0b:fd:af:bd:eb (SEP000BFDAFBDEB) via 10.101.110.50 TransID 3352ffae uid 01:00:0b:fd:af:bd:eb (RENEW)
+DHCPOTHER %{GREEDYDATA}
+
+DHCPDISCOVER ^DHCPDISCOVER
+DHCPOFFER ^DHCPOFFER
+DHCPACK ^DHCPACK
+DHCPNAK ^DHCPNAK
+DHCPDECLINE ^DHCPDECLINE
+DHCPRELEASE ^DHCPRELEASE
+DHCPINFORM ^DHCPINFORM
+RELEASE ^RELEASE
+
+##### WIP ######
+#DHCPREQUEST DHCPREQUEST\s+for%{IP:ip_addr}\s+from\s+%{MAC:mac_addr}\s+\(%{DATA}\)\s+via\s+%{IP:ip_route}\s+TransID\s+%{GREEDYDATA:trans_id}
+#DHCPACK DHCPACK\s+to\s+%{IP:ip_addr}\s+\(%{MAC:mac_addr}\)\s+via\s+%{WORD:network_interace}%{GREEDYDATA}
+#DHCPINFORM DHCPINFORM\s+from\s+%{IP:ip_addr}\s+via\s+%{IP:ip_route}\s+TransID\s+%{GREEDYDATA:trans_id}
+
+# syslog_message	DHCPACK to 10.124.0.83 (a0:8c:fd:a2:b8:1f) via eth1
+#DHCPACK <dhcp_pack>DHCPACK\s+to\s+%{IP:ip_addr}\s+\(%{MAC:mac_addr}\)\s+via\s+%{WORD:network_interace}%{GREEDYDATA}
+#DHCPACK DHCPACK\s+to\s+%{IP:ip_addr}\s+\(%{MAC:mac_addr}\)\s+via\s+%{WORD:network_interace}%{GREEDYDATA}
+
+# syslog_message	DHCPINFORM from 10.172.1.58 via 10.172.110.50 TransID a0484e08
+#DHCPINFORM {WORD:dhcp_request}\s+from\s+%{IP}\s+via\s+%{IP}\s+TransID\s+%{WORD:TransID}%{GREEDYDATA:dhcp_message}
