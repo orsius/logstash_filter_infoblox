@@ -1,0 +1,56 @@
+<30>Mar 28 11:42:11  servername.local 10.210.132.23 dhcpd[5515]: DHCPINFORM from 10.124.1.91 via 10.124.3.249 TransID 7b79bc0b
+<30>Mar 28 11:42:24  servername.local 10.210.132.23 dhcpd[5515]: DHCPINFORM from 10.129.0.70 via 10.129.3.252 TransID 12749d8a
+<30>Mar 28 11:42:46  servername.local 10.210.132.23 dhcpd[5515]: DHCPACK to 10.121.0.197 (20:c6:eb:6b:35:df) via eth1
+<27>Mar 28 11:42:59  servername.local 10.210.132.23 dhcpd[5515]: bind update on 10.11.1.68 from bet_schifflange(1520841253lp) rejected: incoming update is less critical than outgoing update
+<30>Mar 28 11:43:06  servername.local 10.210.132.23 dhcpd[5515]: DHCPACK to 10.124.0.83 (a0:8c:fd:a2:b8:1f) via eth1
+<30>Mar 28 11:43:31  servername.local 10.210.132.23 dhcpd[5515]: DHCPACK to 10.130.25.242 (ac:fd:ce:3a:a6:0b) via eth1
+<30>Mar 28 11:43:45  servername.local 10.210.132.23 dhcpd[5515]: DHCPINFORM from 10.172.1.58 via 10.172.110.50 TransID a0484e08
+<30>Mar 28 11:43:51  servername.local 10.210.132.23 dhcpd[5515]: DHCPACK to 10.121.0.197 (20:c6:eb:6b:35:df) via eth1
+<30>Mar 28 11:43:54  servername.local 10.210.132.23 dhcpd[5515]: DHCPACK to 10.172.2.7 (2c:27:d7:42:a1:18) via eth1
+<30>Mar 28 11:44:10  servername.local 10.210.132.23 dhcpd[5515]: DHCPACK to 10.129.2.101 (2c:27:d7:45:0a:9b) via eth1
+<30>Mar 28 11:44:30  servername.local 10.210.132.23 dhcpd[5515]: DHCPREQUEST for 10.124.5.209 from 00:59:dc:de:03:7b (SEP0059DCDE037B) via 10.124.7.249 TransID 9dd27f1f uid 01:00:59:dc:de:03:7b (RENEW)
+<31>Mar 28 11:44:39  servername.local 10.210.132.23 dhcpd[5515]: GSS-TSIG security update complete at 1522230278. Next update in 142s.
+<30>Mar 28 11:45:04  servername.local 10.210.132.23 dhcpd[5515]: DHCPACK to 10.124.0.50 (48:ba:4e:f1:41:0d) via eth1
+<30>Mar 28 11:45:28  servername.local 10.210.132.23 dhcpd[5515]: DHCPACK to 10.129.0.93 (2c:27:d7:45:0a:51) via eth1
+<30>Mar 28 11:45:31  servername.local 10.210.132.23 dhcpd[5515]: DHCPINFORM from 10.129.0.107 via 10.129.3.252 TransID 4729628c
+<30>Mar 28 11:45:40  servername.local 10.210.132.23 dhcpd[5515]: Added new forward map from WYCRL0446.domain.home to 10.130.25.250
+<27>Mar 28 11:45:46  servername.local 10.210.132.23 dhcpd[5515]: bind update on 10.124.85.133 from bet_xyzw(1506429241lp) rejected: incoming update is less critical than outgoing update
+<30>Mar 28 11:46:00  servername.local 10.210.132.23 dhcpd[5515]: Added new forward map from SEP000BFDAFBDEB.domain.home to 10.101.5.227
+<30>Mar 28 11:46:13  servername.local 10.210.132.23 dhcpd[5515]: DHCPINFORM from 10.129.1.41 via 10.129.3.252 TransID e63f6f9c
+<30>Mar 28 11:46:30  servername.local 10.210.132.23 dhcpd[5515]: DHCPACK on 10.124.85.140 to 18:60:24:49:7d:c7 (Encevo-PC) via eth1 relay 10.124.85.252 lease-duration 604800 (RENEW) uid 01:18:60:24:49:7d:c7
+<30>Mar 28 11:46:31  servername.local 10.210.132.23 dhcpd[5515]: DHCPACK to 10.124.1.10 (2c:41:38:90:56:19) via eth1
+<30>Mar 28 11:46:39  servername.local 10.210.132.23 dhcpd[5515]: DHCPINFORM from 10.124.165.100 via 10.124.165.251 TransID f7367950
+<30>Mar 28 11:46:48  servername.local 10.210.132.23 dhcpd[5515]: DHCPREQUEST for 10.101.5.227 from 00:0b:fd:af:bd:eb (SEP000BFDAFBDEB) via 10.101.110.50 TransID 3352ffae uid 01:00:0b:fd:af:bd:eb (RENEW)
+<30>Mar 28 11:46:55  servername.local 10.210.132.23 dhcpd[5515]: DHCPREQUEST for 10.130.25.250 from 64:80:99:e4:e0:3f (WYCRL0446) via 10.130.27.254 TransID 31dd6d96 uid 01:64:80:99:e4:e0:3f (RENEW)
+<30>Mar 28 11:47:10  servername.local 10.210.132.23 dhcpd[5515]: DHCPREQUEST for 10.130.25.250 from 64:80:99:e4:e0:3f (WYCRL0446) via 10.130.27.254 TransID aa6625ac uid 01:64:80:99:e4:e0:3f (RENEW)
+<30>Mar 28 11:47:18  servername.local 10.210.132.23 dhcpd[5515]: Added reverse map from 110.0.129.10.in-addr.arpa. to WYCRL0101.domain.home
+<30>Mar 28 11:47:33  servername.local 10.210.132.23 dhcpd[5515]: DHCPACK to 10.129.1.54 (20:c6:eb:6b:3a:33) via eth1
+<30>Mar 28 11:47:47  servername.local 10.210.132.23 dhcpd[5515]: DHCPACK to 10.129.1.10 (20:c6:eb:6b:33:3a) via eth1
+<30>Mar 28 11:48:00  servername.local 10.210.132.23 dhcpd[5515]: DHCPACK to 10.172.2.16 (f4:30:b9:d2:a9:4b) via eth1
+<30>Mar 28 11:48:19  servername.local 10.210.132.23 dhcpd[5515]: DHCPACK to 10.129.0.189 (3c:d9:2b:75:88:ae) via eth1
+<30>Mar 28 11:48:28  servername.local 10.210.132.23 dhcpd[5515]: DHCPACK to 10.124.160.137 (48:0f:cf:26:43:a1) via eth1
+<30>Mar 28 11:48:41  servername.local 10.210.132.23 dhcpd[5515]: DHCPACK to 10.124.85.104 (58:20:b1:d9:17:fa) via eth1
+<30>Mar 28 11:49:01  servername.local 10.210.132.23 dhcpd[5515]: DHCPINFORM from 10.132.0.48 via 10.132.3.252 TransID cf3f2cde
+<30>Mar 28 11:49:06  servername.local 10.210.132.23 dhcpd[5515]: DHCPINFORM from 10.132.0.98 via 10.132.3.253 TransID 98c75458
+<30>Mar 28 11:49:40  servername.local 10.210.132.23 dhcpd[5515]: Added reverse map from 79.1.101.10.in-addr.arpa. to SEP000BFDAFBFED.domain.home
+<30>Mar 28 11:49:54  servername.local 10.210.132.23 dhcpd[5515]: DHCPACK on 10.124.85.140 to 18:60:24:49:7d:c7 (WYENL1013) via eth1 relay 10.124.85.252 lease-duration 604800 (RENEW) uid 01:18:60:24:49:7d:c7
+<30>Mar 28 11:50:00  servername.local 10.210.132.23 dhcpd[5515]: DHCPINFORM from 10.124.165.112 via 10.124.165.251 TransID f889f8ed
+<30>Mar 28 11:50:09  servername.local 10.210.132.23 dhcpd[5515]: DHCPACK to 10.172.2.202 (20:c6:eb:6b:33:7f) via eth1
+<30>Mar 28 11:50:31  servername.local 10.210.132.23 dhcpd[5515]: DHCPACK to 10.129.1.55 (20:c6:eb:6b:77:d4) via eth1
+<30>Mar 28 11:50:57  servername.local 10.210.132.23 dhcpd[5515]: DHCPACK to 10.172.2.169 (48:ba:4e:ee:09:a1) via eth1
+<30>Mar 28 11:51:11  servername.local 10.210.132.23 dhcpd[5515]: DHCPINFORM from 10.121.0.197 via 10.121.3.252 TransID 96e667c5
+<30>Mar 28 11:51:17  servername.local 10.210.132.23 dhcpd[5515]: DHCPACK to 10.130.25.254 (80:86:f2:4c:c3:4f) via eth1
+<30>Mar 28 11:51:31  servername.local 10.210.132.23 dhcpd[5515]: DHCPACK to 10.121.0.193 (20:c6:eb:6b:32:fb) via eth1
+<30>Mar 28 11:51:44  servername.local 10.210.132.23 dhcpd[5515]: DHCPACK to 10.124.85.104 (58:20:b1:d9:17:fa) via eth1
+<30>Mar 28 11:52:01  servername.local 10.210.132.23 dhcpd[5515]: DHCPACK to 10.213.160.45 (2c:41:38:89:b8:ad) via eth1
+<30>Mar 28 11:52:23  servername.local 10.210.132.23 dhcpd[5515]: DHCPACK to 10.129.0.115 (2c:27:d7:42:a1:00) via eth1
+<30>Mar 28 11:52:38  servername.local 10.210.132.23 dhcpd[5515]: DHCPACK to 10.129.0.150 (20:c6:eb:6b:7e:92) via eth1
+<30>Mar 28 11:52:44  servername.local 10.210.132.23 dhcpd[5515]: DHCPINFORM from 10.129.1.56 via 10.129.3.252 TransID cc569a9f
+<30>Mar 28 11:52:46  servername.local 10.210.132.23 dhcpd[5515]: DHCPACK to 10.132.0.51 (20:c6:eb:6b:7e:02) via eth1
+<30>Mar 28 11:53:00  servername.local 10.210.132.23 dhcpd[5515]: DHCPREQUEST for 10.101.5.227 from 00:0b:fd:af:bd:eb (SEP000BFDAFBDEB) via 10.101.110.50 TransID 90fc2857 uid 01:00:0b:fd:af:bd:eb (RENEW)
+<30>Mar 28 11:53:09  servername.local 10.210.132.23 dhcpd[5515]: DHCPACK to 10.124.160.127 (dc:4a:3e:02:fe:ae) via eth1
+<30>Mar 28 11:53:25  servername.local 10.210.132.23 dhcpd[5515]: DHCPACK to 10.129.1.130 (2c:27:d7:42:a1:74) via eth1
+<30>Mar 28 11:53:28  servername.local 10.210.132.23 dhcpd[5515]: Average 5/15/60/1440 dynamic DNS update latency: 32776/25418/25994/20929 micro seconds
+<30>Mar 28 11:53:39  servername.local 10.210.132.23 dhcpd[5515]: DHCPINFORM from 10.129.0.178 via 10.129.3.252 TransID 1d904c65
+<30>Mar 28 11:53:52  servername.local 10.210.132.23 dhcpd[5515]: DHCPACK to 10.121.0.159 (70:5a:0f:d0:bb:91) via eth1
+<30>Mar 28 11:54:00  servername.local 10.210.132.23 dhcpd[5515]: DHCPACK to 10.124.0.30 (40:b0:34:ee:cd:9e) via eth1
